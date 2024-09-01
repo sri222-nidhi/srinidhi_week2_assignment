@@ -1,0 +1,21 @@
+create TABLE Signup(
+id INT AUTO_INCREMENT,
+Username VARCHAR(255),
+Email VARCHAR(255),
+Password VARCHAR(255),
+PRIMARY KEY(id)
+);
+select * from signup ;
+
+create TABLE Login(
+id INT AUTO_INCREMENT,
+Email VARCHAR(255),
+Password VARCHAR(255),
+PRIMARY KEY(id)
+);
+select * from Login;
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+flush privileges;
